@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TỪ KHÓA CHÍNH · GAME SHOW – AI LÀ TỶ PHÚ</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+<div class="brand-badge">AI<br>LÀ TỶ PHÚ</div>
+<div class="brand-title">GAME SHOW – AI LÀ TỶ PHÚ <span>⭐⭐</span></div>
+<div class="top-timer" id="topTimer">0:15</div>
+</header>
+<main class="screen" id="screen">
+<section class="board-screen" id="boardScreen">
+<div class="board-wrap">
+<div class="question-nav" id="questionNav"><div class="question-row"><button class="q-pill" data-q="1">Câu 1</button><div class="row-answer"></div></div><div class="question-row"><button class="q-pill" data-q="2">Câu 2</button><div class="row-answer"></div></div><div class="question-row"><button class="q-pill" data-q="3">Câu 3</button><div class="row-answer"></div></div><div class="question-row"><button class="q-pill" data-q="4">Câu 4</button><div class="row-answer"></div></div><div class="question-row"><button class="q-pill" data-q="5">Câu 5</button><div class="row-answer"></div></div><div class="question-row"><button class="q-pill" data-q="6">Câu 6</button><div class="row-answer"></div></div></div>
+<div class="puzzle-panel">
+<div class="puzzle-grid" id="puzzleGrid"></div>
+<div class="keyword-row">
+<button class="keyword-ribbon" id="keywordRevealBtn" type="button">TỪ<br>KHÓA<br>CHÍNH</button>
+<div class="keyword-box" id="keywordBox"></div>
+<button class="cancel-btn" id="cancelBtn">HỦY</button>
+</div>
+</div>
+</div>
+<div class="controls">
+<button class="secondary" id="resetGame">Đặt lại trò chơi</button>
+<button class="primary" id="presentationMode">Trình chiếu</button>
+</div>
+</section>
+<section class="question-screen hidden" id="questionScreen">
+<div class="question-head">
+<button class="back-btn" id="backBtn">← Bảng câu hỏi</button>
+<div class="q-title" id="qTitle">Câu 1</div>
+<div class="question-timer" id="questionTimer">0:15</div>
+</div>
+<div class="question-card">
+<div class="question-text" id="questionText"></div>
+<div class="answer-hint">Đáp án</div>
+<div class="answer-box" id="answerBox">Chưa mở đáp án</div>
+<div class="q-actions">
+<button class="secondary" id="startTimer">Bắt đầu 15 giây</button>
+<button class="secondary" id="stopTimer">Dừng</button>
+<button class="primary" id="markDone">Xác nhận câu</button>
+</div>
+</div>
+</section>
+</main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
